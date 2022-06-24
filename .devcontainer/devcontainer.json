@@ -1,0 +1,38 @@
+{
+    "name": "PHP",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "php",
+    "settings": {
+      "editor.mouseWheelZoom": true,
+      "explorer.compactFolders": false,
+      "editor.fontSize": 16,
+      "editor.minimap.enabled": false,
+      "editor.rulers": [120],
+    
+      "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#4093ff"
+      },
+    
+      "php.validate.executablePath": "/usr/local/bin/php",
+      "php.suggest.basic": false,
+      "php.validate.enable": false,
+    
+      "[php]": {
+        "editor.formatOnSave": true
+      }
+      
+    },
+
+    "workspaceFolder": "/var/www/html",
+    
+    "extensions": [
+      "bmewburn.vscode-intelephense-client",
+      "MehediDracula.php-namespace-resolver",
+      "xdebug.php-debug",
+      "phproberto.vscode-php-getters-setters",
+      "christian-kohler.path-intellisense",
+      "naumovs.color-highlight",
+      "mikestead.dotenv",
+      "humao.rest-client"
+    ]
+  }
