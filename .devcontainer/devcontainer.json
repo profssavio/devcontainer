@@ -2,6 +2,7 @@
     "name": "PHP",
     "dockerComposeFile": "docker-compose.yml",
     "service": "php",
+    "workspaceFolder": "/var/www/html",
     "settings": {
       "editor.mouseWheelZoom": true,
       "explorer.compactFolders": false,
@@ -19,12 +20,12 @@
     
       "[php]": {
         "editor.formatOnSave": true
+      },
+      "search.exclude": {
+        "**/vendor/*/**": true
       }
       
     },
-
-    "workspaceFolder": "/var/www/html",
-    
     "extensions": [
       "bmewburn.vscode-intelephense-client",
       "MehediDracula.php-namespace-resolver",
@@ -33,6 +34,9 @@
       "christian-kohler.path-intellisense",
       "naumovs.color-highlight",
       "mikestead.dotenv",
-      "humao.rest-client"
+      "humao.rest-client",
+      "eamodio.gitlens",
+      "neilbrayfield.php-docblocker",
+      "EditorConfig.EditorConfig"
     ]
   }

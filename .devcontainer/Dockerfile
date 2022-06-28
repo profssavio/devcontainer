@@ -1,6 +1,10 @@
 FROM php:8.1.6-apache
 
 ENV TZ=America/Sao_Paulo
+ENV UID=${UID}
+ENV GID=${GID}
+
+WORKDIR /var/www/html
 
 # Install system dependencies
 RUN apt-get clean && apt-get update -y && apt-get install -y \
@@ -37,5 +41,3 @@ RUN echo "xdebug.connect_timeout_ms=2000" >> /usr/local/etc/php/conf.d/docker-ph
 
 RUN chown -R www-data:www-data /var/www/html
 RUN a2enmod rewrite
-
-WORKDIR /var/www/html
